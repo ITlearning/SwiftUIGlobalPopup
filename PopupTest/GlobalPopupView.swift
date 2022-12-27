@@ -143,6 +143,8 @@ class UIKitGlobalImagePopupView: UIView {
                 $0.height.equalTo(self.screenWidth)
             }
             
+            
+            
             self.baseView.superview?.layoutSubviews()
             
         }, completion: { _ in
