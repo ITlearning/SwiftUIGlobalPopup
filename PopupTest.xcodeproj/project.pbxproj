@@ -14,6 +14,11 @@
 		F50AF662295999F500FB99BC /* PopupTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AF661295999F500FB99BC /* PopupTestTests.swift */; };
 		F50AF66C295999F600FB99BC /* PopupTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AF66B295999F600FB99BC /* PopupTestUITests.swift */; };
 		F50AF66E295999F600FB99BC /* PopupTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AF66D295999F600FB99BC /* PopupTestUITestsLaunchTests.swift */; };
+		F50AF67B29599A3500FB99BC /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AF67A29599A3500FB99BC /* PopupView.swift */; };
+		F50AF67E29599BFB00FB99BC /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = F50AF67D29599BFA00FB99BC /* PopupView */; };
+		F50AF6802959A3CE00FB99BC /* PopupAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50AF67F2959A3CE00FB99BC /* PopupAlignment.swift */; };
+		F5B92289295A982F0037C5D8 /* GlobalPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B92288295A982F0037C5D8 /* GlobalPopupView.swift */; };
+		F5B9228C295A98590037C5D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F5B9228B295A98590037C5D8 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,9 @@
 		F50AF667295999F600FB99BC /* PopupTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopupTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50AF66B295999F600FB99BC /* PopupTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTestUITests.swift; sourceTree = "<group>"; };
 		F50AF66D295999F600FB99BC /* PopupTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F50AF67A29599A3500FB99BC /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		F50AF67F2959A3CE00FB99BC /* PopupAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAlignment.swift; sourceTree = "<group>"; };
+		F5B92288295A982F0037C5D8 /* GlobalPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50AF67E29599BFB00FB99BC /* PopupView in Frameworks */,
+				F5B9228C295A98590037C5D8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +106,11 @@
 			children = (
 				F50AF650295999F500FB99BC /* PopupTestApp.swift */,
 				F50AF652295999F500FB99BC /* ContentView.swift */,
+				F50AF67A29599A3500FB99BC /* PopupView.swift */,
 				F50AF654295999F500FB99BC /* Assets.xcassets */,
 				F50AF656295999F500FB99BC /* Preview Content */,
+				F50AF67F2959A3CE00FB99BC /* PopupAlignment.swift */,
+				F5B92288295A982F0037C5D8 /* GlobalPopupView.swift */,
 			);
 			path = PopupTest;
 			sourceTree = "<group>";
@@ -143,6 +156,10 @@
 			dependencies = (
 			);
 			name = PopupTest;
+			packageProductDependencies = (
+				F50AF67D29599BFA00FB99BC /* PopupView */,
+				F5B9228B295A98590037C5D8 /* SnapKit */,
+			);
 			productName = PopupTest;
 			productReference = F50AF64D295999F500FB99BC /* PopupTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,10 @@
 				Base,
 			);
 			mainGroup = F50AF644295999F500FB99BC;
+			packageReferences = (
+				F50AF67C29599BFA00FB99BC /* XCRemoteSwiftPackageReference "PopupView" */,
+				F5B9228A295A98590037C5D8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F50AF64E295999F500FB99BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50AF67B29599A3500FB99BC /* PopupView.swift in Sources */,
+				F5B92289295A982F0037C5D8 /* GlobalPopupView.swift in Sources */,
 				F50AF653295999F500FB99BC /* ContentView.swift in Sources */,
+				F50AF6802959A3CE00FB99BC /* PopupAlignment.swift in Sources */,
 				F50AF651295999F500FB99BC /* PopupTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +607,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F50AF67C29599BFA00FB99BC /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F5B9228A295A98590037C5D8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F50AF67D29599BFA00FB99BC /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F50AF67C29599BFA00FB99BC /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		F5B9228B295A98590037C5D8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5B9228A295A98590037C5D8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F50AF645295999F500FB99BC /* Project object */;
 }
